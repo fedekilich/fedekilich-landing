@@ -40,7 +40,7 @@
     .divider {
       width: 1px;
       height: 40px;
-      background: #fa4659;
+      background: #444;
       margin-bottom: 28px;
       opacity: 0;
       animation: fadeIn 0.6s ease 0.1s forwards;
@@ -52,7 +52,7 @@
       font-weight: 800;
       font-size: clamp(2rem, 6vw, 4rem);
       color: #f0f0f0;
-      letter-spacing: -0.02em;
+      letter-spacing: -0.04em;
       line-height: 1.1;
       margin-bottom: 18px;
       opacity: 0;
@@ -105,7 +105,9 @@
     .link:hover {
       color: #fa4659;
     }
-
+  .highlight-ia {
+    color: #fa4659;
+  }
     /* ─── Animación ─── */
     @keyframes fadeIn {
       to { opacity: 1; }
@@ -117,7 +119,7 @@
   <main class="card">
     <div class="divider" aria-hidden="true"></div>
     <h1 class="name">Fede Kilich</h1>
-    <p class="role">Design Lead - Brand &amp; MotionBrand + IA</p>
+    <p class="role">Design Lead - Brand &amp; Motion<span class="highlight">+ IA</span></p>
     <p class="bio">Diseñador de marca y motion con más de 15 años de recorrido en productoras, agencias, comunicaciones de gobierno y fintech. Lidero equipos de diseño y construyo sistemas visuales que funcionan en todos los canales.</p>
     <nav class="links" aria-label="Redes profesionales">
       <a class="link" href="https://linkedin.com/in/fedekilich" target="_blank" rel="noopener noreferrer">LinkedIn</a>
