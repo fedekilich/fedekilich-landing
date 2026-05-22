@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Federico Kilich — Brand & Motion Designer" />
+  <title>Federico Kilich</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Mono&family=DM+Sans:wght@400&display=swap');
+
+    /* ─── Reset ─── */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* ─── Centrado total ─── */
+    body {
+      background-color: #0e0e0e;
+      color: #f0f0f0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ─── Bloque central ─── */
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 0;
+    }
+
+    /* ─── Línea vertical separadora ─── */
+    .divider {
+      width: 1px;
+      height: 40px;
+      background: #1e1e1e;
+      margin-bottom: 28px;
+      opacity: 0;
+      animation: fadeIn 0.6s ease 0.1s forwards;
+    }
+
+    /* ─── Nombre ─── */
+    .name {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: clamp(2rem, 5vw, 3.25rem);
+      color: #f0f0f0;
+      letter-spacing: -0.01em;
+      line-height: 1.1;
+      margin-bottom: 18px;
+      opacity: 0;
+      animation: fadeIn 0.6s ease 0.3s forwards;
+    }
+
+    /* ─── Rol ─── */
+    .role {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      color: #555;
+      text-transform: uppercase;
+      letter-spacing: 0.22em;
+      margin-bottom: 22px;
+      opacity: 0;
+      animation: fadeIn 0.6s ease 0.5s forwards;
+    }
+
+    /* ─── Bio ─── */
+    .bio {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 400;
+      font-size: 0.82rem;
+      color: #444;
+      line-height: 1.7;
+      max-width: 360px;
+      margin-bottom: 36px;
+      opacity: 0;
+      animation: fadeIn 0.6s ease 0.7s forwards;
+    }
+
+    /* ─── Links ─── */
+    .links {
+      display: flex;
+      gap: 28px;
+      opacity: 0;
+      animation: fadeIn 0.6s ease 0.9s forwards;
+    }
+
+    .link {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.6rem;
+      color: #444;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .link:hover {
+      color: #888;
+    }
+
+    /* ─── Animación ─── */
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <main class="card">
+    <div class="divider" aria-hidden="true"></div>
+    <h1 class="name">Federico Kilich</h1>
+    <p class="role">Brand &amp; Motion Designer — Design Lead</p>
+    <p class="bio">Diseñador de marca y motion con más de 20 años de recorrido en productoras, agencias, comunicaciones de gobierno y fintech. Lidero equipos de diseño y construyo sistemas visuales que funcionan en todos los canales.</p>
+    <nav class="links" aria-label="Redes profesionales">
+      <a class="link" href="https://linkedin.com/in/fedekilich" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a class="link" href="https://behance.net/fedekilich" target="_blank" rel="noopener noreferrer">Behance</a>
+    </nav>
+  </main>
+
+</body>
+</html>
